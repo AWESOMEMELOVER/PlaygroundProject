@@ -1,5 +1,8 @@
 package com.borscha.micka.playgroundproject.Activities.Activities.network;
 
+import android.content.Context;
+
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.borscha.micka.playgroundproject.Activities.Activities.ApplicationContext;
@@ -9,15 +12,26 @@ import com.borscha.micka.playgroundproject.Activities.Activities.ApplicationCont
  */
 
 public class VolleySingleton {
-    private static VolleySingleton sInstance=null;
+    private static VolleySingleton mInstance;
     private RequestQueue mRequestQueue;
-    private VolleySingleton(){
-        mRequestQueue = Volley.newRequestQueue(ApplicationContext.getAppContext());
+    private static Context mContext;
+
+    private VolleySingleton(Context context){
+        mContext = context;
+        mRequestQueue = getRequestQueue();
     }
-    public static VolleySingleton getsInstance(){
-        if (sInstance==null)
-            sInstance = new VolleySingleton();
-        return sInstance;
+    public RequestQueue getRequestQueue(){
+        if(mRequestQueue ==null)
+            mRequestQueue = Volley.newRequestQueue(mContext.getApplicationContext());
+        return mRequestQueue;
+    }
+    public static synchronized VolleySingleton getInstance(Context context){
+        if(mInstance==null)
+            mInstance = new VolleySingleton(context);
+        return mInstance;
+    }
+    public <T> void addToRequestQueue(Request<T> request){
+        getRequestQueue().add(request);
     }
 
 }

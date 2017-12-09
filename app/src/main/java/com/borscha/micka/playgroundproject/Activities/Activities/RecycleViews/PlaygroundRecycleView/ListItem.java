@@ -1,10 +1,13 @@
 package com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.PlaygroundRecycleView;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by micka on 12/2/2017.
  */
 
-public class ListItem {
+public class ListItem implements Parcelable{
 
     private String name;
     private String description;
@@ -26,6 +29,29 @@ public class ListItem {
         this.street = street;
         this.streetNum = streetNum;
     }
+
+    protected ListItem(Parcel in) {
+        name = in.readString();
+        description = in.readString();
+        imageUrl = in.readString();
+        locationX = in.readFloat();
+        locationY = in.readFloat();
+        city = in.readString();
+        street = in.readString();
+        streetNum = in.readString();
+    }
+
+    public static final Creator<ListItem> CREATOR = new Creator<ListItem>() {
+        @Override
+        public ListItem createFromParcel(Parcel in) {
+            return new ListItem(in);
+        }
+
+        @Override
+        public ListItem[] newArray(int size) {
+            return new ListItem[size];
+        }
+    };
 
     public String getName() {
         return name;
@@ -89,5 +115,22 @@ public class ListItem {
 
     public void setStreetNum(String streetNum) {
         this.streetNum = streetNum;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(name);
+        parcel.writeString(description);
+        parcel.writeString(imageUrl);
+        parcel.writeFloat(locationX);
+        parcel.writeFloat(locationY);
+        parcel.writeString(city);
+        parcel.writeString(street);
+        parcel.writeString(streetNum);
     }
 }

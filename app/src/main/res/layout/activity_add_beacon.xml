@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.borscha.micka.playgroundproject.Activities.Activities.AddBeaconActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/album8" />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button2"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:text="Choose Photo"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Input name" />
+
+    <Button
+        android:id="@+id/sendDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send data"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

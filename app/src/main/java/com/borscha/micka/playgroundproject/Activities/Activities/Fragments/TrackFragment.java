@@ -4,12 +4,26 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.BeaconRecycleView.Beacon;
+import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.TrackingRecycleView.Track;
+import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.TrackingRecycleView.TrackAdapter;
+import com.borscha.micka.playgroundproject.Activities.Activities.network.VolleySingleton;
 import com.borscha.micka.playgroundproject.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,10 +38,12 @@ public class TrackFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+    private ArrayList trackList = new ArrayList<>();
+    private String test;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
 
     private OnFragmentInteractionListener mListener;
 
@@ -66,7 +82,15 @@ public class TrackFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_track, container, false);
+       View view= inflater.inflate(R.layout.fragment_track, container, false);
+        VolleySingleton.getInstance(getContext()).addToRequestQueue(testHttpMethod());
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.trackRecycleView);
+        Toast.makeText(getContext(),"Responce is"+ test,Toast.LENGTH_SHORT).show();
+        testMethod();
+        TrackAdapter trackAdapter = new TrackAdapter(trackList,getActivity());
+        recyclerView.setAdapter(trackAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -105,5 +129,37 @@ public class TrackFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    private void testMethod() {
+        for (int i = 0; i <= 10; i++) {
+            Track listItem = new Track(
+                    "heading" + (i + 1),
+                    "Lorem ipsam",
+                    "http://placehold.it/120x120&text=image1"
+
+
+            );
+            trackList.add(listItem);
+        }
+    }
+    private StringRequest testHttpMethod(){
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://httpbin.org/ip", new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                test = response;
+                if (response==null){
+                    Log.wtf("testRespone","Responce is empty");
+                }
+                Log.wtf("http",response);
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getContext(),error.toString(),Toast.LENGTH_SHORT).show();
+            }
+        });
+        return stringRequest;
     }
 }

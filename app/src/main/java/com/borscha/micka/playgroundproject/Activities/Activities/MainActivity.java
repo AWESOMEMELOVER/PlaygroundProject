@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.container,new PlayfroundFragment()).commit();
+        transaction.replace(R.id.container,new BeaconsFragment()).commit();
     }
 
 }
