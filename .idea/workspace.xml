@@ -10,29 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89881be1-60c2-4a65-a19f-06d69f2c45d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/AddBeaconActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/EditBeaconActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/QRCodeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/TrackingRecycleView/TrackAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_beacon.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_beacon.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/track_list.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/ConfirmSmsActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RegisterActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_confirm_sms.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/LoginActivity.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/TrackFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/TrackFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/ListItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/ListItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/MyAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/MyAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/TrackingRecycleView/Track.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/TrackingRecycleView/Track.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/network/VolleySingleton.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/network/VolleySingleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/beacons_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/beacons_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_beacons.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_beacons.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_track.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_track.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="PlaygroundProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,27 +56,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/MyAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="544">
               <caret line="51" column="22" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beacons_list.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/beacons_list.xml">
+      <file leaf-file-name="activity_register.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-              <folding>
-                <marker date="1512675552384" expanded="false" signature="902:929" ph="&quot;160dp&quot;" />
-                <marker date="1512675552384" expanded="false" signature="1417:1445" ph="&quot;10dp&quot;" />
-                <marker date="1512675552384" expanded="false" signature="1483:1511" ph="&quot;10dp&quot;" />
-                <marker date="1512675552384" expanded="false" signature="1664:1684" ph="&quot;15dp&quot;" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -92,11 +79,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeaconAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/BeaconRecycleView/BeaconAdapter.java">
+      <file leaf-file-name="RegisterActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="105" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="105" />
+            <state relative-caret-position="79">
+              <caret line="43" column="111" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="111" />
+              <folding>
+                <element signature="e#1122#1338#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+                <element signature="e#2391#2407#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_confirm_sms.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_confirm_sms.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfirmSmsActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/ConfirmSmsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+              <folding>
+                <element signature="e#1231#1378#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1536#1729#0" expanded="true" />
+                <element signature="e#1731#1925#0" expanded="true" />
+                <element signature="e#1924#1925#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+              <folding>
+                <element signature="e#782#800#0" expanded="true" />
+                <element signature="e#1038#1067#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,21 +151,48 @@
       <file leaf-file-name="ListItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/ListItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="136">
               <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1373#1374#0" expanded="false" />
+                <element signature="e#1420#1421#0" expanded="false" />
+                <element signature="e#1486#1487#0" expanded="false" />
+                <element signature="e#1535#1536#0" expanded="false" />
+                <element signature="e#1573#1574#0" expanded="false" />
+                <element signature="e#1600#1601#0" expanded="false" />
+                <element signature="e#1640#1641#0" expanded="false" />
+                <element signature="e#1672#1673#0" expanded="false" />
+                <element signature="e#1710#1711#0" expanded="false" />
+                <element signature="e#1744#1745#0" expanded="false" />
+                <element signature="e#1798#1799#0" expanded="false" />
+                <element signature="e#1844#1845#0" expanded="false" />
+                <element signature="e#1879#1880#0" expanded="false" />
+                <element signature="e#1910#1911#0" expanded="false" />
+                <element signature="e#1958#1959#0" expanded="false" />
+                <element signature="e#1998#1999#0" expanded="false" />
+                <element signature="e#2033#2034#0" expanded="false" />
+                <element signature="e#2065#2066#0" expanded="false" />
+                <element signature="e#2114#2115#0" expanded="false" />
+                <element signature="e#2156#2157#0" expanded="false" />
+                <element signature="e#2191#2192#0" expanded="false" />
+                <element signature="e#2223#2224#0" expanded="false" />
+                <element signature="e#2272#2273#0" expanded="false" />
+                <element signature="e#2314#2315#0" expanded="false" />
+                <element signature="e#2345#2346#0" expanded="false" />
+                <element signature="e#2372#2373#0" expanded="false" />
+                <element signature="e#2412#2413#0" expanded="false" />
+                <element signature="e#2444#2445#0" expanded="false" />
+                <element signature="e#2477#2478#0" expanded="false" />
+                <element signature="e#2506#2507#0" expanded="false" />
+                <element signature="e#2550#2551#0" expanded="false" />
+                <element signature="e#2586#2587#0" expanded="false" />
+                <element signature="e#2622#2623#0" expanded="false" />
+                <element signature="e#2654#2655#0" expanded="false" />
+                <element signature="e#2704#2705#0" expanded="false" />
+                <element signature="e#2746#2747#0" expanded="false" />
+                <element signature="e#2797#2798#0" expanded="false" />
+                <element signature="e#2821#2822#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/TrackFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -127,9 +200,11 @@
       <file leaf-file-name="PlayfroundFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/PlayfroundFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
+            <state relative-caret-position="1870">
               <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,23 +212,12 @@
       <file leaf-file-name="BeaconsFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/BeaconsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="833">
               <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -2638,7 +2702,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Entities/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Controller/HttpController.java" />
@@ -2672,7 +2735,6 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_scan.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/QRCodeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/AddBeaconActivity.java" />
@@ -2685,6 +2747,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/EditBeaconActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/beacons_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/MyAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_confirm_sms.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/ConfirmSmsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2720,14 +2788,19 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="PlaygroundProject" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2793,14 +2866,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RecycleViews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2812,119 +2877,12 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RecycleViews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlaygroundRecycleView" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlaygroundProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RecycleViews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BeaconRecycleView" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlaygroundProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlaygroundProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlaygroundProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlaygroundProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2939,8 +2897,9 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\micka\AndroidStudioProjects\PlaygroundProject\app\src\main\res\drawable" />
+      <recent name="C:\Users\micka\AndroidStudioProjects\PlaygroundProject\app\src\main\res\mipmap-xxhdpi" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.borscha.micka.playgroundproject" />
@@ -2949,9 +2908,8 @@
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\micka\AndroidStudioProjects\PlaygroundProject\app\src\main\res\drawable" />
-      <recent name="C:\Users\micka\AndroidStudioProjects\PlaygroundProject\app\src\main\res\mipmap-xxhdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -3289,13 +3247,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5089087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3304,7 +3262,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3338,11 +3296,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_recycle_view.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recycle_view.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_playground.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/PlaygroundActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_playground.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment_playground.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/FragmentPlayground.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/PlaygroundFragment.java" />
@@ -3390,10 +3343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1126#1127#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3411,9 +3360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="e#608#609#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3434,22 +3380,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_scan.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3468,7 +3402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3476,19 +3409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="115" column="96" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="96" />
-          <folding>
-            <element signature="class#2442:3388" expanded="false" />
-            <element signature="method#surfaceCreated#0;class#2442:3388" expanded="false" />
-            <element signature="method#surfaceChanged#0;class#2442:3388" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3504,10 +3424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#506#507#0" expanded="false" />
-            <element signature="e#562#563#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3515,7 +3431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3523,7 +3438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3608,9 +3522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="e#513#514#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3678,49 +3589,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="32" column="105" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="105" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1469#1470#0" expanded="false" />
+            <element signature="e#1509#1510#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/TrackFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="1105">
           <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/PlayfroundFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
+        <state relative-caret-position="1870">
           <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/Fragments/BeaconsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="833">
           <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/ListItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="136">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="false" />
+            <element signature="e#1420#1421#0" expanded="false" />
+            <element signature="e#1486#1487#0" expanded="false" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1573#1574#0" expanded="false" />
+            <element signature="e#1600#1601#0" expanded="false" />
+            <element signature="e#1640#1641#0" expanded="false" />
+            <element signature="e#1672#1673#0" expanded="false" />
+            <element signature="e#1710#1711#0" expanded="false" />
+            <element signature="e#1744#1745#0" expanded="false" />
+            <element signature="e#1798#1799#0" expanded="false" />
+            <element signature="e#1844#1845#0" expanded="false" />
+            <element signature="e#1879#1880#0" expanded="false" />
+            <element signature="e#1910#1911#0" expanded="false" />
+            <element signature="e#1958#1959#0" expanded="false" />
+            <element signature="e#1998#1999#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2065#2066#0" expanded="false" />
+            <element signature="e#2114#2115#0" expanded="false" />
+            <element signature="e#2156#2157#0" expanded="false" />
+            <element signature="e#2191#2192#0" expanded="false" />
+            <element signature="e#2223#2224#0" expanded="false" />
+            <element signature="e#2272#2273#0" expanded="false" />
+            <element signature="e#2314#2315#0" expanded="false" />
+            <element signature="e#2345#2346#0" expanded="false" />
+            <element signature="e#2372#2373#0" expanded="false" />
+            <element signature="e#2412#2413#0" expanded="false" />
+            <element signature="e#2444#2445#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2506#2507#0" expanded="false" />
+            <element signature="e#2550#2551#0" expanded="false" />
+            <element signature="e#2586#2587#0" expanded="false" />
+            <element signature="e#2622#2623#0" expanded="false" />
+            <element signature="e#2654#2655#0" expanded="false" />
+            <element signature="e#2704#2705#0" expanded="false" />
+            <element signature="e#2746#2747#0" expanded="false" />
+            <element signature="e#2797#2798#0" expanded="false" />
+            <element signature="e#2821#2822#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RecycleViews/PlaygroundRecycleView/MyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="544">
           <caret line="51" column="22" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2920">
+          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_confirm_sms.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="43" column="111" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="111" />
+          <folding>
+            <element signature="e#1122#1338#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#2391#2407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding>
+            <element signature="e#782#800#0" expanded="true" />
+            <element signature="e#1038#1067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/borscha/micka/playgroundproject/Activities/Activities/ConfirmSmsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding>
+            <element signature="e#1231#1378#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1536#1729#0" expanded="true" />
+            <element signature="e#1731#1925#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
