@@ -14,6 +14,12 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.borscha.micka.playgroundproject.Activities.Activities.Entities.GlobalUser;
 import com.borscha.micka.playgroundproject.R;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
@@ -21,6 +27,7 @@ import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
 import java.io.IOException;
+import java.util.Map;
 
 public class QRCodeActivity extends AppCompatActivity {
 
@@ -30,6 +37,8 @@ public class QRCodeActivity extends AppCompatActivity {
     CameraSource cameraSource;
     final int RequestCameraPermissionID = 1001;
     String qrCodeValue;
+    final String URL = "http://unix.trosha.dev.lumination.com.ua/user/";
+    String userId;
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -58,7 +67,7 @@ public class QRCodeActivity extends AppCompatActivity {
 
         cameraPreview = (SurfaceView) findViewById(R.id.cameraPreview);
         txtResult = (TextView) findViewById(R.id.txtResult);
-
+         userId = ((GlobalUser) this.getApplicationContext()).getUserId();
         barcodeDetector = new BarcodeDetector.Builder(this)
                 .setBarcodeFormats(Barcode.QR_CODE)
                 .build();
@@ -122,4 +131,6 @@ public class QRCodeActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

@@ -1,6 +1,7 @@
 package com.borscha.micka.playgroundproject.Activities.Activities.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -21,9 +23,15 @@ import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.Be
 import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.TrackingRecycleView.Track;
 import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.TrackingRecycleView.TrackAdapter;
 import com.borscha.micka.playgroundproject.Activities.Activities.network.VolleySingleton;
+import com.borscha.micka.playgroundproject.AddTrackActivity;
 import com.borscha.micka.playgroundproject.R;
+import com.google.gson.reflect.TypeToken;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +51,10 @@ public class TrackFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    Button btn_add_track;
+    String testId = "1";
+    String URL = "http://unix.trosha.dev.lumination.com.ua/user/";
+    String URL2 = "/tracking/";
 
 
     private OnFragmentInteractionListener mListener;
@@ -86,7 +98,13 @@ public class TrackFragment extends Fragment {
         VolleySingleton.getInstance(getContext()).addToRequestQueue(testHttpMethod());
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.trackRecycleView);
         Toast.makeText(getContext(),"Responce is"+ test,Toast.LENGTH_SHORT).show();
-        testMethod();
+        btn_add_track = (Button) view.findViewById(R.id.btn_add_track);
+        btn_add_track.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity().getApplicationContext(), AddTrackActivity.class));
+            }
+        });
         TrackAdapter trackAdapter = new TrackAdapter(trackList,getActivity());
         recyclerView.setAdapter(trackAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -161,5 +179,40 @@ public class TrackFragment extends Fragment {
             }
         });
         return stringRequest;
+    }
+
+    void getUsersTracking(){
+
+        JsonObjectRequest myReq = new JsonObjectRequest(Request.Method.GET, URL + testId + URL2, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONArray array = response.getJSONArray("data");
+                    fromJson(array);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+
+
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.wtf("Responce is", error);
+            }
+        });
+        VolleySingleton.getInstance(getActivity().getApplicationContext()).addToRequestQueue(myReq);
+    }
+
+    private void fromJson(JSONArray array) throws Exception
+    {
+
+        trackList = new ArrayList<>();
+        for (int i = 0; i < array.length(); ++i)
+        {
+            JSONObject track = array.getJSONObject(i);
+            //trackList.add(new Track(track.getInt("beaconId"), beacon.getString("name"), beacon.getString("imageUrl")));
+        }
     }
 }

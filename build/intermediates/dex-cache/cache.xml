@@ -7,8 +7,17 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="9478c23f525dcbadb2b7741fc8507f9b0cccdb71">
+        sha1="6add40d575ace521679c0c7cb6d5c60c5ceccdad">
         <dex dex="C:\Users\micka\AndroidStudioProjects\PlaygroundProject\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c5ef2d478c23642d8f548d3a18845bbb34282dfe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\micka\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\micka\AndroidStudioProjects\PlaygroundProject\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3.1_76a0df6d68a049e12f2b5a89e727de99a41b03fa\classes.dex" />
     </item>
     <item
         is-multidex="true"

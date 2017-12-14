@@ -1,21 +1,45 @@
 package com.borscha.micka.playgroundproject.Activities.Activities.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.borscha.micka.playgroundproject.Activities.Activities.AddBeaconActivity;
+import com.borscha.micka.playgroundproject.Activities.Activities.QRCodeActivity;
 import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.BeaconRecycleView.Beacon;
 import com.borscha.micka.playgroundproject.Activities.Activities.RecycleViews.BeaconRecycleView.BeaconAdapter;
+import com.borscha.micka.playgroundproject.Activities.Activities.network.VolleySingleton;
+import com.borscha.micka.playgroundproject.Activities.Activities.utilits.JsonHelper;
 import com.borscha.micka.playgroundproject.R;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,18 +49,23 @@ import java.util.ArrayList;
  * Use the {@link BeaconsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BeaconsFragment extends Fragment {
+public class BeaconsFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private ArrayList testList=new ArrayList();
-
+    private ArrayList beaconsList=new ArrayList();
+    String Url = "http://unix.trosha.dev.lumination.com.ua/user/";
+    String Url2 = "/beacon/";
+    String testId = "1";
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private Button btn_add_beacon;
     private OnFragmentInteractionListener mListener;
+    Type type;
+    Gson converter = new Gson();
+    String jsonString;
 
     public BeaconsFragment() {
         // Required empty public constructor
@@ -67,6 +96,7 @@ public class BeaconsFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -75,8 +105,11 @@ public class BeaconsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_beacons, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.beaconRecycleView);
-        testMethod();
-        BeaconAdapter beaconAdapter = new BeaconAdapter(testList,getActivity());
+
+        btn_add_beacon = (Button) view.findViewById(R.id.btn_add_beacon);
+        btn_add_beacon.setOnClickListener(this);
+       // testMethod();
+        BeaconAdapter beaconAdapter = new BeaconAdapter(beaconsList,getActivity());
         recyclerView.setAdapter(beaconAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
@@ -95,15 +128,32 @@ public class BeaconsFragment extends Fragment {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
+
         } else {
             Toast.makeText(context,"Playground Fragment attached",Toast.LENGTH_SHORT).show();
+            getUsersBeacons();
+
         }
+
+
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view.getId()) {
+            case R.id.btn_add_beacon:
+                startActivity(new Intent(getActivity().getApplicationContext(), QRCodeActivity.class));
+                break;
+            case R.id.btn_confirm_sms:
+
+                break;
+        }
     }
 
     /**
@@ -120,16 +170,39 @@ public class BeaconsFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-    private void testMethod() {
-        for (int i = 0; i <= 10; i++) {
-            Beacon listItem = new Beacon(
-                    "heading" + (i + 1),
-                    "Lorem ipsam",
-                    "http://placehold.it/120x120&text=image1"
+
+    void getUsersBeacons(){
+        type = new TypeToken<List<Beacon>>(){}.getType();
+        JsonObjectRequest myReq = new JsonObjectRequest(Request.Method.GET, Url + testId + Url2, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONArray array = response.getJSONArray("data");
+                    fromJson(array);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
 
 
-            );
-            testList.add(listItem);
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.wtf("Responce is", error);
+            }
+        });
+        VolleySingleton.getInstance(getActivity().getApplicationContext()).addToRequestQueue(myReq);
+    }
+
+    private void fromJson(JSONArray array) throws Exception
+    {
+
+            ArrayList<Beacon> res = new ArrayList<>();
+                 for (int i = 0; i < array.length(); ++i)
+        {
+            JSONObject beacon = array.getJSONObject(i);
+            beaconsList.add(new Beacon(beacon.getInt("beaconId"), beacon.getString("name"), beacon.getString("imageUrl")));
         }
     }
 }

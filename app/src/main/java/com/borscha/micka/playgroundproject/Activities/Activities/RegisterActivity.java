@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -14,66 +16,120 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.borscha.micka.playgroundproject.Activities.Activities.Entities.GlobalUser;
 import com.borscha.micka.playgroundproject.R;
 
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.nio.file.Paths.get;
+
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText editText;
-    Button button;
+    EditText mRegInputName,mRegInputLast,mRegTelephoneNumber;
+    TextView link_login;
+    Button btn_signup;
     RequestQueue queue;
+    final String birthday = "1993-05-23";
+    final String gender = "1";
+    final String URL = "http://unix.trosha.dev.lumination.com.ua/user";
+    String vTelephone,vName,vLast;
+    GlobalUser globalUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        editText = (EditText) findViewById(R.id.editText);
-        button = (Button) findViewById(R.id.sendTelephoneNumber);
+        globalUser = (GlobalUser) getApplicationContext();
+
         queue = Volley.newRequestQueue(this);
-        button.setOnClickListener(new View.OnClickListener() {
+        mRegInputName = (EditText) findViewById(R.id.input_name);
+        mRegInputLast = (EditText) findViewById(R.id.input_last);
+        mRegTelephoneNumber = (EditText) findViewById(R.id.input_number);
+        link_login = (TextView) findViewById(R.id.link_login);
+        btn_signup = (Button) findViewById(R.id.btn_signup);
+
+
+
+
+        btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String number = editText.getText().toString();
-                sendData(number);
+                vTelephone = mRegTelephoneNumber.getText().toString();
+                vName = mRegInputName.getText().toString();
+                vLast = mRegInputLast.getText().toString();
+                sendData();
             }
         });
+
+        link_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+            }
+        });
+
+
+
+
+
     }
 
-    void sendData(final String telephone){
-        StringRequest myReq = new StringRequest(Request.Method.POST, "http://unix.trosha.dev.lumination.com.ua/user", new Response.Listener<String>() {
+    void sendData() {
+        StringRequest postRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if(response!=null) {
+                if (response != null) {
                     Log.wtf("RESPONCE", response.toString());
-                    Intent intent = new Intent(getApplicationContext(), ConfirmSmsActivity.class);
-                    intent.putExtra("userId",response);
-                    startActivity(intent);
+                    globalUser.setUserId(getStringValue(response));
+                    globalUser.setFirstName(vName);
+                    globalUser.setLastName(vLast);
+                    globalUser.setGender(gender);
+                    globalUser.setBirthday(birthday);
 
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 }
-                else{
-                    Log.wtf("RESPONCE","Is empty");
-                }
-
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.wtf("Error",error.toString());
+                Toast.makeText(getApplicationContext(),"Something wrong, try again",Toast.LENGTH_LONG).show();
             }
         }){
             @Override
-            protected Map<String, String> getParams()
-            {
+            protected Map<String, String> getParams() {
                 Map<String, String>  params = new HashMap<String, String>();
-                params.put("phoneNumber", "380984895779");
-                params.put("firstName", "micka");
-                params.put("lastName", "borscha");
-                params.put("gender", "1");
-                params.put("birthday","1993-05-23");
+                params.put("phoneNumber", vTelephone);
+                params.put("firstName", vName);
+                params.put("lastName", vLast);
+                params.put("gender", gender);
+                params.put("birthday",birthday);
+
                 return params;
             }
         };
-        queue.add(myReq);
+
+
+        queue.add(postRequest);
     }
+
+
+
+
+    public static String getStringValue(String responce){
+        String result="";
+        String [] bufStrings = responce.split("\\:");
+        result=bufStrings[1].substring(1,bufStrings[1].length()-2);
+
+        return result;
+    }
+    public static boolean isNumeric(String str)
+    {
+        NumberFormat formatter = NumberFormat.getInstance();
+        ParsePosition pos = new ParsePosition(0);
+        formatter.parse(str, pos);
+        return str.length() == pos.getIndex();
+    }
+
 }
