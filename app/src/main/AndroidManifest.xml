@@ -20,13 +20,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Activities.Activities.MainActivity"
-            android:label="@string/title_activity_main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="@string/title_activity_main"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
@@ -37,7 +32,13 @@
         <activity android:name=".Activities.Activities.EditBeaconActivity" />
         <activity android:name=".Activities.Activities.RegisterActivity"></activity>
         <activity android:name=".Activities.Activities.ConfirmSmsActivity" />
-        <activity android:name=".Activities.Activities.LoginActivity"></activity>
+        <activity android:name=".Activities.Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".AddTrackActivity"></activity>
     </application>
 

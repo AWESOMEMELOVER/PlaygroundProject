@@ -105,6 +105,7 @@ public class TrackFragment extends Fragment {
                 startActivity(new Intent(getActivity().getApplicationContext(), AddTrackActivity.class));
             }
         });
+        testMethod();
         TrackAdapter trackAdapter = new TrackAdapter(trackList,getActivity());
         recyclerView.setAdapter(trackAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -150,11 +151,11 @@ public class TrackFragment extends Fragment {
     }
 
     private void testMethod() {
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 3; i++) {
             Track listItem = new Track(
                     "heading" + (i + 1),
                     "Lorem ipsam",
-                    "http://placehold.it/120x120&text=image1"
+                    "http://placehold.it/120x120&text=Hi"
 
 
             );
